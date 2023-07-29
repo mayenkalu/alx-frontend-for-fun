@@ -1,61 +1,50 @@
-# Forms
+# Form
 
-## Description:bulb:
-How to build an HTML5 form and style it
+**Creating an HTML5 form:**
 
-* How to create an HTML5 form
-* How to choose the right input type
-* How to constrain a form field with regular expressions
-* How to style inputs for invalid, valid, and required fields
-* How to build a coment form
-* How to build a simple search form
-* How to create usable and accessible forms
+- Use the `<form>` element to create a form.
+- Add various form elements like `<input>`, `<textarea>`, and `<select>` within the form.
+- Set the `action` attribute to specify the form's destination URL upon submission.
+- Optionally, set the `method` attribute to specify the HTTP method (GET or POST).
 
----
+**Choosing the right input type:**
 
-## Resources:books:
-Read or watch:
-* [An Extensive Guide To Web Form Usability - Smashing Magazine] (https://intranet.hbtn.io/rltoken/L7JpxWt0F5VsUtwsDGaJYg)
-* [Forms - UX Movement] (https://intranet.hbtn.io/rltoken/FaOz7GkGRSnrlYKL91sWYQ)
-* [Placeholders in Form Fields are Harmful] (https://intranet.hbtn.io/rltoken/kkI4hp8L2xriaBiZ4aay5g)
-* [The Anatomy of Accessible Forms: Best Practices | Deque] (https://intranet.hbtn.io/rltoken/Suk4Imd1PwQWQfMARmUyOg)
-* [Pure CSS Custom Error Messaging for Default Form Elements - Sarah Holley Design] (https://intranet.hbtn.io/rltoken/mt7GbkQzlwq86rGgLXuKug)
-* [HTML forms - Learn web development | MDN] (https://intranet.hbtn.io/rltoken/FqmevqAf9FQJTCLzWHkR1g)
-* [form - HTML: Hypertext Markup Language | MDN] (https://intranet.hbtn.io/rltoken/SSy7rj0I3adIOAdQYHZlTg)
-* [fieldset: The Field Set element - HTML: Hypertext Markup Language | MDN] (https://intranet.hbtn.io/rltoken/Dei_L42fLRZU_AJ6ZrEHYQ)
-* [legend | MDN] (https://intranet.hbtn.io/rltoken/ZkZo0GMrr0swRR5qOAbZpA)
-* [label | MDN] (https://intranet.hbtn.io/rltoken/riHRpJYmDTPKnhEnmim8Og)
-* [input: The input element | MDN] (https://intranet.hbtn.io/rltoken/I-tvtRp2hlUSVkdNVuOkzQ)
-* [tabindex | MDN] (https://intranet.hbtn.io/rltoken/IVNFtpOTz5HH2hhPVirm1w)
-* [accesskey | MDN] (https://intranet.hbtn.io/rltoken/hpkb0GWg6d58CT3VbJBYUA)
-* [button: The Button element | MDN] (https://intranet.hbtn.io/rltoken/lWIyMaHK4ZXYyIftpFkydQ)
-* [select | MDN] (https://intranet.hbtn.io/rltoken/yW_Ov-o5Z5-WHRqOH1yrWQ)
-* [optgroup | MDN] (https://intranet.hbtn.io/rltoken/fd435kOSi_vDQuxS9C_hzQ)
-* [datalist | MDN] (https://intranet.hbtn.io/rltoken/9zHNcNs_TijZGoXlSPE6UQ)
-* [textarea | MDN] (https://intranet.hbtn.io/rltoken/ZI43Ei3OIRGmi0fdEm-Wfg)
-* [Form validation UX in HTML and CSS | CSS-Tricks] (https://intranet.hbtn.io/rltoken/Wbg54wi7RUJX2_y7hrw6dQ)
-* [Constraint validation - Developer guides | MDN] (https://intranet.hbtn.io/rltoken/aS9wOqiKFbqnoWXUIdgbcg)
-* [:invalid - CSS: Cascading Style Sheets | MDN] (https://intranet.hbtn.io/rltoken/7h8uLLpM8WxMQS7t6aAk7Q)
-* [:valid - CSS: Cascading Style Sheets | MDN] (https://intranet.hbtn.io/rltoken/UKXa7S-Q_saLWXgrJeFRNg)
-* [:optional - CSS: Cascading Style Sheets | MDN] (https://intranet.hbtn.io/rltoken/Yw2FK8PGHmv5jgF8BOKJ9w)
+- Consider the purpose of the input field and user experience.
+- Use `<input type="text">` for general text input.
+`<input type="email">` for email addresses, and `<input type="url">` for URLs.
+- `<input type="number">` for numerical values, and `<input type="date">` for dates.
+- `<input type="checkbox">` for single checkbox options, and `<input type="radio">` for exclusive choices.
 
----
+**Constraining a form field with regular expressions:**
 
-### [0. basic comment structure](./01-article.html)
+- Add the `pattern` attribute to the input element.
+- Define a regular expression that matches the desired input format.
+- Provide a helpful error message using the `title` attribute to guide users.
 
-### [1. more comment basic structure](./02-article.html)
+**Styling inputs for invalid, valid, and required fields:**
 
-### [2. create labels and input container](./03-styles.css)
+- Use CSS pseudo-classes like `:invalid`, `:valid`, and `:required`.
+- Customize the appearance of input fields using these pseudo-classes.
+- Provide visual cues, like colors or icons, to indicate validation status.
+- Utilize HTML5's built-in form validation attributes, such as required, ``minlength``, and `maxlength`.
 
-### [3. create the inputs](./04-article.html)
+**Building a comment form:**
 
-### [4. add help messages](./05-article.html)
+Create an HTML form with an input field for the user's name, email, and comment.
+Apply form validation, especially for the email field.
+Consider adding a textarea for longer comments.
+Optionally, implement server-side validation and anti-spam measures.
 
-### [5. add pure HTML / CSS error handling](./06-styles.css)
+**Building a simple search form:**
 
-### [6. add the search form](./07-article.html)
+- Create an HTML form with an input field for the search query.
+- Set the form's `action` attribute to the search URL on your website.
+- Use the `method="GET"` attribute to retrieve search queries via URL parameters.
 
----
+**Creating usable and accessible forms:**
 
-## Author
-* **Joseph Mahiuha** - [Mahiuha](https://github.com/Mahiuha)
+- Keep forms simple, organized, and well-labeled.
+- Use clear instructions and error messages to guide users.
+- Ensure form fields have appropriate input types and constraints.
+- Implement semantic HTML elements and ARIA attributes for accessibility.
+- Test your forms on different devices and assistive technologies to ensure usability for all users.
